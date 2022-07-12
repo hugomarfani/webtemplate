@@ -1,0 +1,19 @@
+
+
+body {
+    background-color: #151515;
+    height: 3000px;
+}
+
+.glass {
+    position:relative;
+  background: rgba(21, 21, 21, 0.9);
+}
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .glass {
+    background: rgba(21, 21, 21, 0.5);
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+  }
+}
